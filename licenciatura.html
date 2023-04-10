@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>O Meu Portfolio Digital</title>
+    <script src="myscripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Miguel Cardoso">
+    <meta name="description" content="Portfolio Digital">
+    <meta name="keywords" content="Portfolio Digital">
+</head>
+
+<body>
+    <header>
+
+
+
+        <div class="logo">Miguel Cardoso</div>
+        <div class="hamburguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="hero.html">Hero Page</a>
+                </li>
+
+                <li><a href="sobreMim.html" class="active">Sobre Mim</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Programação Web</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sobre este website</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Rodapé</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <script>
+        hamburguer = document.querySelector('.hamburguer');
+        hamburguer.onclick = function () {
+            navBar = document.querySelector('.nav-bar');
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+    <h1>A minha Licenciatura</h1>
+
+    <h2>Segue-se a lista de cadeiras deste curso:</h2>
+    <div class="course-info">
+        <h1>Engenharia Informática</h1>
+        <p> A Licenciatura em Engenharia Informática destina-se a todos os jovens que tenham particular interesse pela
+            informática e que gostem de desafios constantes,
+            de modo a acompanharem todas as evoluções inerentes à Engenharia Informática.
+            Após a conclusão da Licenciatura em Engenharia Informática, os seus licenciados terão ao seu dispor uma
+            multitude de oportunidades de emprego e uma
+            elevada taxa de empregabilidade</p>
+    </div>
+    <div class="class-list">
+        <h2>Lista de Cadeiras </h2>
+        <div id="class-buttons">
+            <!-- Use JavaScript to dynamically generate the list of classes here -->
+        </div>
+    </div>
+    <div class="class-details">
+        <h2>Class Details</h2>
+        <div id="class-details-content"></div>
+    </div>
+    <script>
+        const classes = [
+            {
+                number: 1,
+                title: 'Fundamentos de Física',
+                description: 'Referente a fundamentos de física, unidade curricular do 1º ano, 1º semestre.',
+                instructor: 'Não ',
+                date: 'January 1, 2023'
+            },
+            {
+                number: 2,
+                title: 'Fundamentos de Programação',
+                description: 'In this class, you will learn the basics of CSS and how to style your web pages.',
+                instructor: 'Pedro Alves',
+                date: 'January 8, 2023'
+            },
+            {
+                number: 3,
+                title: 'Matemática Discreta',
+                description: 'In this class, you will learn the basics of CSS and how to style your web pages.',
+                instructor: 'Jane Smith',
+                date: 'January 8, 2023'
+            },
+            {
+                number: 5,
+                title: 'Matemática I',
+                description: 'In this class, you will learn the basics of CSS and how to style your web pages.',
+                instructor: 'Jane Smith',
+                date: 'January 8, 2023'
+            },
+            {
+                number: 6,
+                title: 'Sistemas Digitais',
+                description: 'In this class, you will learn the basics of CSS and how to style your web pages.',
+                instructor: 'Jane Smith',
+                date: 'January 8, 2023'
+            },
+            {
+                number: 7,
+                title: 'Algoritmos e Estruturas de Dados',
+                description: 'In this class, you will learn the basics of CSS and how to style your web pages.',
+                instructor: 'Jane Smith',
+                date: 'January 8, 2023'
+            },
+            {
+                number: 8,
+                title: 'Arquitetura de Computadores',
+                description: 'In this class, you will learn the basics of CSS and how to style your web pages.',
+                instructor: 'Jane Smith',
+                date: 'January 8, 2023'
+            },
+            {
+                number: 9,
+                title: 'Competências Comportamentais',
+                description: 'In this class, you will learn the basics of CSS and how to style your web pages.',
+                instructor: 'Diogo Morgado',
+                date: 'January 8, 2023'
+            },
+            {
+                number: 10,
+                title: 'Linguagens de Programação I',
+                description: 'In this class, you will learn the basics of CSS and how to style your web pages.',
+                instructor: 'Pedro Serra',
+                date: 'January 8, 2023'
+            },
+            {
+                number: 11,
+                title: 'Matemática II',
+                description: 'In this class, you will learn the basics of CSS and how to style your web pages.',
+                instructor: 'Alexander Mikovic',
+                date: 'January 8, 2023'
+            },
+            {
+                number: 12,
+                title: 'Álgebra Linear',
+                description: 'In this class, you will learn the basics of CSS and how to style your web pages.',
+                instructor: 'Jane Smith',
+                ects: 6,
+                anoLetivo: 2020,
+                anoCurricular: 1,
+                ranking: 5,
+                semestre: '1ºSemestre'
+            },
+
+            // Add more classes here as needed
+        ];
+
+        const classButtonsContainer = document.getElementById('class-buttons');
+        const classDetailsContainer = document.getElementById('class-details-content');
+
+        // Loop through the classes array and create a button for each class
+        classes.forEach((classInfo) => {
+            const button = document.createElement('button');
+            button.textContent = `Unidade Curricular ${classInfo.number}: ${classInfo.title}`;
+            // When the button is clicked, display the details for the corresponding class
+            button.addEventListener('click', () => {
+                displayClassDetails(classInfo);
+            });
+            classButtonsContainer.appendChild(button);
+        });
+
+        // Function to display the details for a given class
+        function displayClassDetails(classInfo) {
+            classDetailsContainer.innerHTML = `
+				<p><strong>Cadeira:</strong> ${classInfo.number}</p>
+				<p><strong>Nome da Cadeira:</strong> ${classInfo.title}</p>
+				<p><strong>Descrição:</strong> ${classInfo.description}</p>
+				<p><strong>Docentes:</strong> ${classInfo.instructor}</p>
+                <p><strong>ECTS:</strong> ${classInfo.ects}</p>
+                <p><strong>Ano Letivo:</strong> ${classInfo.anoCurricular}</p>
+                
+			`;
+            // Show the class details section
+            document.querySelector('.class-details').style.display = 'block';
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

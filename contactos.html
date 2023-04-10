@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>O Meu Portfolio Digital</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-DG5ltS58nBa5L5+5pBf5rqAg4iD4SQ0B0YQHk5zP7Sx5/N5Z5K5fysp5X1CfNS8lAUnOwzLq3Bgq39FpyQOaZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Miguel Cardoso">
+    <meta name="description" content="Portfolio Digital">
+    <meta name="keywords" content="Portfolio Digital">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">Miguel Cardoso</div>
+        <div class="hamburguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="hero.html">Hero Page</a>
+                </li>
+                <div class="dropdown">
+                    <li><a href="sobreMim.html">Sobre Mim</a></li>
+                    <div class="dropdown-content">
+                        <a href="licenciatura.html">Licenciatura</a>
+                        <a href="educacao.html">Educação</a>
+                        <a href="aptidoescompetencias.html">Aptidões e competências pessoais</a>
+                        <a href="xpProfissional.html">Experiência profissional</a>
+                        <a href="interessesHobbies.html">Interesses</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Projetos</a></li>
+                    <div class="dropdown-content">
+                        <a href="projetosUniversidade.html">Projetos da Universidade</a>
+                        <a href="projetosPessoais.html">Projetos Pessoais</a>
+                        <a href="projetosTFC.html">Projetos TFC interessantes</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Programação Web</a></li>
+                    <div class="dropdown-content">
+                        <a href="tecnologiasExistentes.html">Tecnologias Existentes</a>
+                        <a href="laboratorios.html">Laboratórios</a>
+                        <a href="noticias.html">Notícias</a>
+                    </div>
+                </div>
+                <li><a href="#">Blog</a></li>
+                <div class="dropdown">
+                    <li><a href="#">Sobre este website</a></li>
+                    <div class="dropdown-content">
+                        <a href="tecnologiasUsadas.html">Tecnologias Usadas</a>
+                        <a href="padroesUsados.html">Padrões Usados</a>
+                    </div>
+                </div>
+                <li><a href="playground.html">Playground</a></li>
+                <li><a href="contactos.html" class="active">Contactos</a></li>
+                <li><a href="#">Rodapé</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburguer = document.querySelector('.hamburguer');
+        hamburguer.onclick = function () {
+            navBar = document.querySelector('.nav-bar');
+            navBar.classList.toggle("active");
+
+
+        }
+    </script>
+    <article class="primeiro">
+        <h1>Sobre mim</h1>
+        <li><a href="https://www.w3.org/Style/CSS/Overview.en.html"><img src="images/imagem1.jpg"></a></li>
+
+        <p>
+            Sou o Miguel Cardoso e tenho 21 anos, sou de Odivelas e estou no 3º ano da
+            licenciatura em Engenharia Informática na
+            Universidade Lusófona de Humanidades e Tecnologias.
+            Os links para contacto, encontram-se no rodapé da página.
+        </p>
+    </article>
+
+
+
+    <div class="footer-content">
+        <h3>Contactos</h3>
+        <p>A minha informação</p>
+        <p>Email: miguelbcardoso7@hotmail.com</p>
+        <ul class="socials">
+            <li><a href="https://www.instagram.com/miguelbcardoso/"><img src="images/instagram.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/miguelbcardoso/"><img src="images/linkedin.png"></a></li>
+            <li><a href="https://github.com/miguel-cardoso-a22102861"><img src="images/githubrodape.png"></a></li>
+
+        </ul>
+
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 Miguel Cardoso. Feito por <span>Miguel Cardoso</span>
+        </p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>O Meu Portfolio Digital</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Miguel Cardoso">
+    <meta name="description" content="Portfolio Digital">
+    <meta name="keywords" content="Portfolio Digital">
+</head>
+
+<body>
+    <header>
+
+
+
+        <div class="logo">Miguel Cardoso</div>
+        <div class="hamburguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="hero.html">Hero Page</a>
+                </li>
+
+                <li><a href="sobreMim.html" class="active">Sobre Mim</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Programação Web</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sobre este website</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Rodapé</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <script>
+        hamburguer = document.querySelector('.hamburguer');
+        hamburguer.onclick = function () {
+            navBar = document.querySelector('.nav-bar');
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <div class="grid">
+        <h1>Licenciatura de Engenharia Informática</h1>
+        <p>Este curso tem como objetivo formar profissionais capazes de desenvolver, implementar e gerir sistemas
+            informáticos, de acordo com as necessidades
+            de uma organização, de forma a melhorar a sua
+            eficiência e eficácia. O curso de Engenharia Informática
+            é muito interessante e desafiante.</p>
+        <a href="licenciatura.html"> Licenciatura</a>
+
+        <p>Segue-se a lista de cadeiras deste curso:</p>
+        <div class="box">
+            <ul>
+                <li><span>1</span>Sistemas de suporte a decisao</li>
+                <li><span>2</span>Lista 2</li>
+                <li><span>3</span>Lista 3</li>
+                <li><span>4</span>Lista 4</li>
+                <li><span>5</span>Lista 5</li>
+                <li><span>6</span>Lista 6</li>
+                <li><span>7</span>Lista 7</li>
+            </ul>
+
+        </div>
+
+
+        <h1>Curso de Programação Web</h1>
+        <p>Lorem ipsum dior</p>
+
+        <h1>Aptidões e Competências pessoais</h1>
+        <p>Lorem ipsum dior</p>
+
+
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>O Meu Portfolio Digital</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-DG5ltS58nBa5L5+5pBf5rqAg4iD4SQ0B0YQHk5zP7Sx5/N5Z5K5fysp5X1CfNS8lAUnOwzLq3Bgq39FpyQOaZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Miguel Cardoso">
+    <meta name="description" content="Portfolio Digital">
+    <meta name="keywords" content="Portfolio Digital">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">Miguel Cardoso</div>
+        <div class="hamburguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="hero.html">Hero Page</a>
+                </li>
+                <div class="dropdown">
+                    <li><a href="sobreMim.html">Sobre Mim</a></li>
+                    <div class="dropdown-content">
+                        <a href="licenciatura.html">Licenciatura</a>
+                        <a href="educacao.html">Educação</a>
+                        <a href="aptidoescompetencias.html">Aptidões e competências pessoais</a>
+                        <a href="xpProfissional.html">Experiência profissional</a>
+                        <a href="interessesHobbies.html">Interesses</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#" class="active">Projetos</a></li>
+                    <div class="dropdown-content">
+                        <a href="projetosUniversidade.html">Projetos da Universidade</a>
+                        <a href="projetosPessoais.html">Projetos Pessoais</a>
+                        <a href="projetosTFC.html">Projetos TFC interessantes</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Programação Web</a></li>
+                    <div class="dropdown-content">
+                        <a href="tecnologiasExistentes.html">Tecnologias Existentes</a>
+                        <a href="laboratorios.html">Laboratórios</a>
+                        <a href="noticias.html">Notícias</a>
+                    </div>
+                </div>
+                <li><a href="#">Blog</a></li>
+                <div class="dropdown">
+                    <li><a href="#">Sobre este website</a></li>
+                    <div class="dropdown-content">
+                        <a href="tecnologiasUsadas.html">Tecnologias Usadas</a>
+                        <a href="padroesUsados.html">Padrões Usados</a>
+                    </div>
+                </div>
+                <li><a href="playground.html">Playground</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Rodapé</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburguer = document.querySelector('.hamburguer');
+        hamburguer.onclick = function () {
+            navBar = document.querySelector('.nav-bar');
+            navBar.classList.toggle("active");
+
+
+        }
+    </script>
+    <h1>Notícias sobre artigos do medium.com</h1>
+
+    <div class="article">
+        <h2>1. You’re Using ChatGPT Wrong! Here’s How to Be Ahead of 99% of ChatGPT Users</h2>
+        <img src="images/noticia1.webp" alt="Noticia 1">
+        <p>Descrição - Most of us use ChatGPT wrong.
+
+            We don’t include examples in our prompts.
+            We ignore that we can control ChatGPT’s behavior with roles.
+            We let ChatGPT guess stuff instead of providing it with some information.</p>
+        <a
+            href="https://medium.com/artificial-corner/youre-using-chatgpt-wrong-here-s-how-to-be-ahead-of-99-of-chatgpt-users-886a50dabc54">Leia
+            mais</a>
+    </div>
+
+    <div class="article">
+        <h2>2. Use Git like a senior engineer</h2>
+        <img src="images/noticia2.webp" alt="Noticia 2">
+        <p>Descrição da noticia:
+            I've used these features of Git for years across teams and projects.
+            I'm still developing opinions around some workflows (like to squash or not) but the core tooling is powerful
+            and flexible
+            (and scriptable!).</p>
+        <a href="https://medium.com/gitconnected/use-git-like-a-senior-engineer-ef6d741c898e">Leia
+            mais</a>
+    </div>
+
+    <div class="article">
+        <h2>3. Google Bard First Impressions — Will It Kill ChatGPT?</h2>
+        <img src="images/noticia3.webp" alt="Noticia 3">
+        <p>Descrição da noticia:
+            Yesterday evening, I received an exciting email from Google — I was invited to be one of the first people to
+            test Google Bard,
+            Google's soon-to-be-released AI chatbot. Bard is Google's answer to the wildly popular ChatGPT system from
+            OpenAI,
+            which has quickly become the fastest-growing app in history.
+            Since ChatGPT launched late last year, OpenAI has continuously improved the system — their GPT-4 update last
+            week was a major leap ahead in terms of the system's capabilities..</p>
+        <a href="https://medium.com/the-generator/google-bard-first-impressions-will-it-kill-chatgpt-59c16ae76e3e">Leia
+            mais</a>
+
+    </div>
+    <div class="article">
+        <h2>4. 3D Python Workflows for LiDAR City Models: A Step-by-Step Guide</h2>
+        <img src="images/noticia4.webp" alt="Noticia 4">
+        <p>Descrição da noticia:
+            The Ultimate Guide to unlocking a streamlined workflow for 3D City Modelling Applications. The tutorial
+            covers Python Automation combining 3D Point Clouds, Meshes, and Voxels for advanced analysis</p>
+        <a href="https://medium.com/the-generator/google-bard-first-impressions-will-it-kill-chatgpt-59c16ae76e3e">Leia
+            mais</a>
+
+    </div>
+
+    <div class="article">
+        <h2>5. What's new in Flutter 3.7</h2>
+        <img src="images/noticia5.webp" alt="Noticia 5">
+        <p>Descrição da noticia:
+            We are excited to start 2023 with the release of Flutter 3.7! In Flutter 3.7, we as a community, continue to
+            improve the framework with the addition of some great new features such as: the ability to create custom
+            menu bars, cascading menus, tools to better support internationalization, new debugging tools, and much
+            more.
+            We also continue to refine features such as global selection, faster rendering with Impeller, DevTools, and
+            as always, performance!
+            Let's go on a quick journey together to explore the new features in Flutter 3.7!</p>
+        <a href="https://medium.com/flutter/whats-new-in-flutter-3-7-38cbea71133c">Leia
+            mais</a>
+
+    </div>
+
+    <div class="article">
+        <h2>6. Why I’m an iPhoneographer</h2>
+        <img src="images/noticia6.webp" alt="Noticia 6">
+        <p>Descrição da noticia:
+            When hiking in Italy, driving down the Pacific Coast Highway, or camping in our celebrated National Parks, I
+            want great photos to share and save. Photography is essential to my travel experience, and I think carefully
+            about what to pack, how much risk I am willing to take, and what results I want.</p>
+        <a href="https://medium.com/live-view/why-im-an-iphoneographer-9fe839bc3044">Leia
+            mais</a>
+
+    </div>
+    <div class="article">
+        <h2>8. Anatomy of SQL Window Functions</h2>
+        <img src="images/noticia8.webp" alt="Noticia 8">
+        <p>Descrição da noticia:
+            In order to understand the enterprise data; you have to query it a lot. When I say ‘A lot’, I mean it.
+            Working with unfamiliar piles of data is often daunting and it’s always a good practice to take some time to
+            explore and understand the data itself. It’s good to have basic data retrieval skills but knowing analytical
+            functions to derive some useful insights out of your data is cherry on top of a cake and it’s fun too!</p>
+        <a href="https://medium.com/towards-data-science/anatomy-of-sql-window-functions-7256d8cf509a">Leia
+            mais</a>
+
+    </div>
+    <div class="article">
+        <h2>9. 16 little UI design rules that make a big impact</h2>
+        <img src="images/noticia7.webp" alt="Noticia 9">
+        <p>Descrição da noticia:
+            A UI design case study to redesign an example user interface using logical rules or guidelines.
+            User interface design is hard. With so many options to choose from regarding layout, spacing, typography,
+            and colour, making design decisions can be overwhelming. When you add usability, accessibility, and
+            psychology to the mix, it gets even harder.
+        </p>
+        <a href="https://medium.com/ux-planet/16-ui-design-tips-ba2e7524d203">Leia
+            mais</a>
+
+    </div>
+    <div class="article">
+        <h2>10. 16 little UI design rules that make a big impact</h2>
+        <img src="images/noticia7.webp" alt="Noticia 9">
+        <p>Descrição da noticia:
+            A UI design case study to redesign an example user interface using logical rules or guidelines.
+            User interface design is hard. With so many options to choose from regarding layout, spacing, typography,
+            and colour, making design decisions can be overwhelming. When you add usability, accessibility, and
+            psychology to the mix, it gets even harder.
+        </p>
+        <a href="https://medium.com/ux-planet/16-ui-design-tips-ba2e7524d203">Leia
+            mais</a>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

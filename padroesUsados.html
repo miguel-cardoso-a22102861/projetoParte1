@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>O Meu Portfolio Digital</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-DG5ltS58nBa5L5+5pBf5rqAg4iD4SQ0B0YQHk5zP7Sx5/N5Z5K5fysp5X1CfNS8lAUnOwzLq3Bgq39FpyQOaZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Miguel Cardoso">
+    <meta name="description" content="Portfolio Digital">
+    <meta name="keywords" content="Portfolio Digital">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">Miguel Cardoso</div>
+        <div class="hamburguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="hero.html" class="active">Hero Page</a>
+                </li>
+                <div class="dropdown">
+                    <li><a href="sobreMim.html">Sobre Mim</a></li>
+                    <div class="dropdown-content">
+                        <a href="licenciatura.html">Licenciatura</a>
+                        <a href="educacao.html">Educação</a>
+                        <a href="aptidoescompetencias.html">Aptidões e competências pessoais</a>
+                        <a href="xpProfissional.html">Experiência profissional</a>
+                        <a href="interessesHobbies.html">Interesses</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Projetos</a></li>
+                    <div class="dropdown-content">
+                        <a href="projetosUniversidade.html">Projetos da Universidade</a>
+                        <a href="projetosPessoais.html">Projetos Pessoais</a>
+                        <a href="projetosTFC.html">Projetos TFC interessantes</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Programação Web</a></li>
+                    <div class="dropdown-content">
+                        <a href="tecnologiasExistentes.html">Tecnologias Existentes</a>
+                        <a href="laboratorios.html">Laboratórios</a>
+                        <a href="noticias.html">Notícias</a>
+                    </div>
+                </div>
+                <li><a href="#">Blog</a></li>
+                <div class="dropdown">
+                    <li><a href="#" class="active">Sobre este website</a></li>
+                    <div class="dropdown-content">
+                        <a href="tecnologiasUsadas.html">Tecnologias Usadas</a>
+                        <a href="padroesUsados.html">Padrões Usados</a>
+                    </div>
+                </div>
+                <li><a href="playground.html">Playground</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Rodapé</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburguer = document.querySelector('.hamburguer');
+        hamburguer.onclick = function () {
+            navBar = document.querySelector('.nav-bar');
+            navBar.classList.toggle("active");
+
+
+        }
+    </script>
+    <article class="primeiro">
+        <h1>Lista de Padrões Usados</h1>
+        <h1>Padrão arquitetural cliente-servidor HTTP</h1>
+
+        <p>
+            É um modelo de comunicação entre computadores na web. O cliente envia uma requisição para o servidor e o
+            servidor responde com a resposta. O protocolo HTTP (Hypertext Transfer Protocol) é usado para definir a
+            comunicação entre o cliente e o servidor.
+            O cliente faz uma solicitação HTTP para o servidor, que envia uma resposta HTTP em retorno.
+            Este modelo é escalável e permite que um grande número de clientes se conectem a um único servidor.
+
+        </p>
+
+
+
+
+
+    </article>
+    <article class="primeiro">
+        <h1>Padrão de software MVC</h1>
+
+        <p>
+            O Padrão de software MVC (Modelo, Visualização, Controlador) é um padrão de arquitetura de software que
+            separa os dados da aplicação, a interface do usuário e a lógica de controlo em três componentes diferentes
+            O Model representa os dados e a lógica de negócios do aplicativo. Ele gerencia o estado do aplicativo e
+            fornece uma interface para acessar e manipular esses dados.
+
+            A View é responsável pela apresentação dos dados do modelo para o usuário. Ela define a interface do
+            usuário e como os dados são exibidos, por exemplo, por meio de uma interface gráfica de usuário (GUI).
+
+            O Controller é responsável por receber entradas do usuário, interpretá-las e atualizar o modelo e a visão
+            de acordo. Ele lida com a lógica de controle do aplicativo e coordena as interações entre o modelo e a
+            visão.
+        </p>
+
+
+
+
+
+    </article>
+    <article class="primeiro">
+        <h1>Comunicação Assíncrona AJAX</h1>
+
+        <p>
+            AJAX significa "Asynchronous JavaScript and XML" (JavaScript e XML Assíncronos) e é um padrão de comunicação
+            utilizado em aplicações web para enviar e receber dados do servidor sem precisar recarregar a página
+            inteira.
+            a comunicação entre o navegador web do usuário e o servidor ocorre em segundo plano, de forma assíncrona,
+            sem interromper ou recarregar a página. Permite que o user tenha uma interação mais rápida, sem
+            interrupções.
+            O AJAX utiliza tecnologias web como HTML, CSS, JavaScript e XML ou JSON para enviar e receber dados do
+            servidor. Quando o usuário realiza uma ação na página, como clicar em um botão, o JavaScript realizar um
+            pedido AJAX para o servidor e recebe uma resposta em formato XML ou JSON. Em seguida, o JavaScript
+            atualiza a página com os novos dados recebidos, sem recarregá-la.
+        </p>
+
+
+
+
+
+    </article>
+
+
+    <div class="footer-content">
+        <h3>Contactos</h3>
+        <p>A minha informação</p>
+        <ul class="socials">
+            <li><a href="#"><img src="images/facebook.png"></a></li>
+            <li><a href="#"><img src="images/instagram.png"></a></li>
+            <li><a href="#"><img src="images/linkedin.png"></a></li>
+            <li><a href="#"><img src="images/twitter.png"></a></li>
+        </ul>
+
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 Miguel Cardoso. Feito por <span>Miguel Cardoso</span>
+        </p>
+    </div>
+
+</body>
+
+</html>

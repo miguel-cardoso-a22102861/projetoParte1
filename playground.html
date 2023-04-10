@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>O Meu Portfolio Digital</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-DG5ltS58nBa5L5+5pBf5rqAg4iD4SQ0B0YQHk5zP7Sx5/N5Z5K5fysp5X1CfNS8lAUnOwzLq3Bgq39FpyQOaZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Miguel Cardoso">
+    <meta name="description" content="Portfolio Digital">
+    <meta name="keywords" content="Portfolio Digital">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">Miguel Cardoso</div>
+        <div class="hamburguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="hero.html" class="active">Hero Page</a>
+                </li>
+                <div class="dropdown">
+                    <li><a href="sobreMim.html">Sobre Mim</a></li>
+                    <div class="dropdown-content">
+                        <a href="licenciatura.html">Licenciatura</a>
+                        <a href="educacao.html">Educação</a>
+                        <a href="aptidoescompetencias.html">Aptidões e competências pessoais</a>
+                        <a href="xpProfissional.html">Experiência profissional</a>
+                        <a href="interessesHobbies.html">Interesses</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Projetos</a></li>
+                    <div class="dropdown-content">
+                        <a href="projetosUniversidade.html">Projetos da Universidade</a>
+                        <a href="projetosPessoais.html">Projetos Pessoais</a>
+                        <a href="projetosTFC.html">Projetos TFC interessantes</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Programação Web</a></li>
+                    <div class="dropdown-content">
+                        <a href="tecnologiasExistentes.html">Tecnologias Existentes</a>
+                        <a href="laboratorios.html">Laboratórios</a>
+                        <a href="noticias.html">Notícias</a>
+                    </div>
+                </div>
+                <li><a href="#">Blog</a></li>
+                <div class="dropdown">
+                    <li><a href="#">Sobre este website</a></li>
+                    <div class="dropdown-content">
+                        <a href="tecnologiasUsadas.html">Tecnologias Usadas</a>
+                        <a href="padroesUsados.html">Padrões Usados</a>
+                    </div>
+                </div>
+                <li><a href="javaScriptPlayground.html">Playground</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Rodapé</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburguer = document.querySelector('.hamburguer');
+        hamburguer.onclick = function () {
+            navBar = document.querySelector('.nav-bar');
+            navBar.classList.toggle("active");
+
+
+        }
+    </script>
+    <div class="calculator">
+        <h2>Calculadora 😜😜😜</h2>
+        <input id="expression" type="text" placeholder="Insira uma expressão aritmética">
+        <div>
+            <button id="calculate">Calcular</button>
+            <button id="clear">Limpar</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script>
+
+        const expressionInput = document.getElementById('expression');
+        const calculateButton = document.getElementById('calculate');
+        const clearButton = document.getElementById('clear');
+        const resultDiv = document.getElementById('result');
+
+        calculateButton.addEventListener('click', () => {
+            const expression = expressionInput.value;
+            const result = eval(expression);
+            resultDiv.innerText = result;
+        });
+
+        clearButton.addEventListener('click', () => {
+            resultDiv.innerText = '';
+            expressionInput.value = '';
+        });
+    </script>
+
+    <h2>Imagem para inserir legenda</h2>
+    <div class="image-container">
+        <form>
+            <label for="legenda">Legenda:</label>
+            <input type="text" id="legenda" name="legenda">
+            <input type="submit" value="Enviar" onclick="addCaption(event)">
+        </form>
+        <img src="images/imagemLegenda.png" alt="Imagem inspiradora">
+        <div class="caption"></div>
+    </div>
+    <script>
+        function addCaption(event) {
+            event.preventDefault(); // impede que o formulário seja enviado
+
+            var legenda = document.getElementById("legenda").value;
+            var caption = document.querySelector(".caption");
+
+            caption.innerHTML = legenda;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
