@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>O Meu Portfolio Digital</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-DG5ltS58nBa5L5+5pBf5rqAg4iD4SQ0B0YQHk5zP7Sx5/N5Z5K5fysp5X1CfNS8lAUnOwzLq3Bgq39FpyQOaZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Miguel Cardoso">
+    <meta name="description" content="Portfolio Digital">
+    <meta name="keywords" content="Portfolio Digital">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">Miguel Cardoso</div>
+        <div class="hamburguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="hero.html" class="active">Hero Page</a>
+                </li>
+                <div class="dropdown">
+                    <li><a href="sobreMim.html">Sobre Mim</a></li>
+                    <div class="dropdown-content">
+                        <a href="licenciatura.html">Licenciatura</a>
+                        <a href="educacao.html">Educação</a>
+                        <a href="aptidoescompetencias.html">Aptidões e competências pessoais</a>
+                        <a href="xpProfissional.html">Experiência profissional</a>
+                        <a href="interessesHobbies.html">Interesses</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Projetos</a></li>
+                    <div class="dropdown-content">
+                        <a href="projetosUniversidade.html">Projetos da Universidade</a>
+                        <a href="projetosPessoais.html">Projetos Pessoais</a>
+                        <a href="projetosTFC.html">Projetos TFC interessantes</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Programação Web</a></li>
+                    <div class="dropdown-content">
+                        <a href="tecnologiasExistentes.html">Tecnologias Existentes</a>
+                        <a href="laboratorios.html">Laboratórios</a>
+                        <a href="noticias.html">Notícias</a>
+                    </div>
+                </div>
+                <li><a href="#">Blog</a></li>
+                <div class="dropdown">
+                    <li><a href="#">Sobre este website</a></li>
+                    <div class="dropdown-content">
+                        <a href="tecnologiasUsadas.html">Tecnologias Usadas</a>
+                        <a href="padroesUsados.html">Padrões Usados</a>
+                    </div>
+                </div>
+                <li><a href="playground.html">Playground</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Rodapé</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburguer = document.querySelector('.hamburguer');
+        hamburguer.onclick = function () {
+            navBar = document.querySelector('.nav-bar');
+            navBar.classList.toggle("active");
+
+
+        }
+    </script>
+    <article class="primeiro">
+        <h1>Cascade Style Sheet (CSS)</h1>
+        <li><a href="https://www.w3.org/Style/CSS/Overview.en.html"><img src="images/css.png"></a></li>
+
+        <p>
+            Desenvolvido por World Wide Web e Consortium,
+            O CSS é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em uma
+            linguagem de marcação. Embora o CSS seja frequentemente usado para definir a aparência de páginas da Web
+            e da interface de usuário escritas em HTML e XHTML, o CSS também pode ser usado para definir a aparência
+            de documentos publicados em outras linguagens de marcação, incluindo XHTML, SVG e XML, incluindo
+            elementos usados para formatar texto em XML.
+            Encontra-se na versão 3, que foi publicada em 17 de dezembro de 2018.
+            Clickando na imagem temos acesso ao site oficial do CSS.
+            As principais características do CSS são:
+            Permissão do usuários de definir a aparência de páginas da Web e de documentos de apresentação;
+            Permite a separação do conteúdo de um documento da sua apresentação;
+            Permite a reutilização de estilos em diferentes documentos;
+            Permite a aplicação de diferentes estilos a diferentes dispositivos;
+        </p>
+
+
+
+
+
+    </article>
+    <article class="primeiro">
+        <h1>Hypertext Markup Language (HTML)</h1>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="images/html.png"></a></li>
+        <p>
+            Desenvolvido por W3C e WHATWG,
+            HTML (Hypertext Markup Language) é o bloco de construção mais básico da web.
+            Define o significado e a estrutura do conteúdo da web.
+            Outras tecnologias além do HTML geralmente são usadas para descrever a
+            aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.
+            "Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre
+            sites.
+            Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por
+            outras pessoas,
+            todos nós nos tornamos um participante ativo na world wide web.
+        </p>
+
+
+
+
+
+    </article>
+
+    <article class="primeiro">
+        <h1>Tecnologias backend</h1>
+        <h1>Django</h1>
+        <li><a href="https://docs.djangoproject.com/en/4.2/"><img src="images/django.png"></a></li>
+        <p>
+            Desenvolvido por Django Software Foundation,
+            Django é um framework web de código aberto escrito em Python,
+            que segue o padrão de projeto model-template-view.
+            É mantido pela Django Software Foundation, uma organização sem fins lucrativos.
+            Permite uma documentação excelente, integra Python Web-Framework, Escalibilidade Alta, Versatilidade,
+            permite um desenvolvido rápido.
+        </p>
+
+
+
+
+
+
+    </article>
+    <article class="primeiro">
+        <h1>Laravel</h1>
+        <li><a href="https://laravel.com/"><img src="images/laravel.png"></a></li>
+        <p>
+            Laravel é um framework web de código aberto com licença MIT, escrito em PHP e desenhado para o
+            desenvolvimento de aplicações e serviços web usando o padrão de arquitetura MVC (Model-View-Controller).
+            O Laravel foi criado por Taylor Otwell em 2011.
+
+
+        </p>
+    </article>
+
+    <article class="primeiro">
+        <h1>Tecnologias Front End</h1>
+        <h1>React(JavaScript)</h1>
+        <li><a href="https://react.dev/"><img src="images/react.png"></a></li>
+        <p>
+            Desenvolvido pelo Facebook em 2013,
+            React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas.
+            Tem como objetivo ser a V de MVC (Model-View-Controller), ou seja, a camada de visualização.
+            É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais.
+            Tem bastantes vantagens, como: Desempenho, Componentes, Reutilização, Comunidade, Documentação, etc.
+
+        </p>
+    </article>
+
+    <article class="primeiro">
+        <h1>Angular</h1>
+        <li><a href="https://angular.io/"><img src="images/angular.png"></a></li>
+        <p>
+            Angular é um framework JavaScript de código aberto criado em 2009 por Misko Hevery e Adam Abrons.
+            É mantido pela Google, que o utiliza em vários projetos, como o Google Maps.
+            É um framework baseado em componentes, ou seja, é possível criar componentes reutilizáveis.
+            Também é possível criar componentes que podem ser utilizados em outras aplicações.
+            Tem bastantes vantagens, como: Desempenho, Componentes, Reutilização, Comunidade, Documentação, etc.
+
+        </p>
+    </article>
+
+    <div class="footer-content">
+        <h3>Contactos</h3>
+        <p>A minha informação</p>
+        <p>Email: miguelbcardoso7@hotmail.com</p>
+        <ul class="socials">
+            <li><a href="https://www.instagram.com/miguelbcardoso/"><img src="images/instagram.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/miguelbcardoso/"><img src="images/linkedin.png"></a></li>
+            <li><a href="https://github.com/miguel-cardoso-a22102861"><img src="images/githubrodape.png"></a></li>
+
+        </ul>
+
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 Miguel Cardoso. Feito por <span>Miguel Cardoso</span>
+        </p>
+    </div>
+
+</body>
+
+</html> 
