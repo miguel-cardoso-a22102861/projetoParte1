@@ -29,19 +29,46 @@
         <nav class="nav-bar">
             <ul>
                 <li>
-                    <a href="hero.html">Hero Page</a>
+                    <a href="hero.html" >Hero Page</a>
                 </li>
-
-                <li><a href="sobreMim.html" class="active">Sobre Mim</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Programação Web</a></li>
+                <div class="dropdown">
+                    <li><a href="sobreMim.html" class="active">Sobre Mim</a></li>
+                    <div class="dropdown-content">
+                        <a href="licenciatura.html">Licenciatura</a>
+                        <a href="educacao.html">Educação</a>
+                        <a href="aptidoescompetencias.html">Aptidões e competências pessoais</a>
+                        <a href="xpProfissional.html">Experiência profissional</a>
+                        <a href="interessesHobbies.html">Interesses</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Projetos</a></li>
+                    <div class="dropdown-content">
+                        <a href="projetosUniversidade.html">Projetos da Universidade</a>
+                        <a href="projetosPessoais.html">Projetos Pessoais</a>
+                        <a href="projetosTFC.html">Projetos TFC interessantes</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a href="#">Programação Web</a></li>
+                    <div class="dropdown-content">
+                        <a href="tecnologiasExistentes.html">Tecnologias Existentes</a>
+                        <a href="laboratorios.html">Laboratórios</a>
+                        <a href="noticias.html">Notícias</a>
+                    </div>
+                </div>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Sobre este website</a></li>
-                <li><a href="#">Contactos</a></li>
+                <div class="dropdown">
+                    <li><a href="#">Sobre este website</a></li>
+                    <div class="dropdown-content">
+                        <a href="tecnologiasUsadas.html">Tecnologias Usadas</a>
+                        <a href="padroesUsados.html">Padrões Usados</a>
+                    </div>
+                </div>
+                <li><a href="playground.html">Playground</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
                 <li><a href="#">Rodapé</a></li>
-
             </ul>
-
         </nav>
     </header>
     <script>
@@ -190,6 +217,23 @@
             document.querySelector('.class-details').style.display = 'block';
         }
     </script>
+
+      <div class="footer-content">
+        <h3>Contactos</h3>
+        <p>A minha informação</p>
+        <p>Email: miguelbcardoso7@hotmail.com</p>
+        <ul class="socials">
+            <li><a href="https://www.instagram.com/miguelbcardoso/"><img src="images/instagram.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/miguelbcardoso/"><img src="images/linkedin.png"></a></li>
+            <li><a href="https://github.com/miguel-cardoso-a22102861"><img src="images/githubrodape.png"></a></li>
+
+        </ul>
+
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 Miguel Cardoso. Feito por <span>Miguel Cardoso</span>
+        </p>
+    </div>
 
 
 
