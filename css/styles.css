@@ -96,7 +96,6 @@ body {
 main {
     /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
     height: 90vh;
-    background-image: url("https://images.unsplash.com/photo-1459213599465-03ab6a4d5931?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MTAxNTA2MA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -785,3 +784,39 @@ header img {
     max-width: 125px;
     /* adjust the value to fit your image */
 }
+.nome{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    list-style: none;
+    padding: 0;
+    
+}
+
+.aptidoes {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .disciplinas li {
+    margin-bottom: 5px;
+    margin-left: 30px;
+    color: #0088a9;
+  }
+  
+  .descricao {
+    content: attr(data-disciplines);
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #0e110b;
+  }
+  
+  
+  
+  
+  
+  
