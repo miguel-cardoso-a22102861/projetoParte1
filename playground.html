@@ -31,7 +31,7 @@
         <nav class="nav-bar">
             <ul>
                 <li>
-                    <a href="hero.html" class="active">Hero Page</a>
+                    <a href="hero.html">Hero Page</a>
                 </li>
                 <div class="dropdown">
                     <li><a href="sobreMim.html">Sobre Mim</a></li>
@@ -67,7 +67,7 @@
                         <a href="padroesUsados.html">Padrões Usados</a>
                     </div>
                 </div>
-                <li><a href="javaScriptPlayground.html">Playground</a></li>
+                <li><a href="javaScriptPlayground.html" class="active">Playground</a></li>
                 <li><a href="#">Contactos</a></li>
                 <li><a href="#">Rodapé</a></li>
             </ul>
@@ -82,71 +82,74 @@
 
         }
     </script>
-    <div class="calculator">
-        <h2>Calculadora 😜😜😜</h2>
-        <input id="expression" type="text" placeholder="Insira uma expressão aritmética">
-        <div>
-            <button id="calculate">Calcular</button>
-            <button id="clear">Limpar</button>
+
+    <div class="toggle">
+
+    </div>
+
+
+
+
+    <div class="contentorCalculadora">
+        <div class="calculadora">
+            <form>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value = ''" class="operator">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)"
+                        class="operator">
+                    <input type="button" value="." onclick="display.value += '.'" class="operator">
+                    <input type="button" value="/" onclick="display.value += '/'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7'">
+                    <input type="button" value="8" onclick="display.value += '8'">
+                    <input type="button" value="9" onclick="display.value += '9'">
+                    <input type="button" value="*" onclick="display.value += '*'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4'">
+                    <input type="button" value="5" onclick="display.value += '5'">
+                    <input type="button" value="6" onclick="display.value += '6'">
+                    <input type="button" value="-" onclick="display.value += '-'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1'">
+                    <input type="button" value="2" onclick="display.value += '2'">
+                    <input type="button" value="3" onclick="display.value += '3'">
+                    <input type="button" value="+" onclick="display.value += '+'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00'">
+                    <input type="button" value="0" onclick="display.value += '0'">
+                    <input type="button" value="=" onclick="display.value = eval(display.value)" class="igual">
+                </div>
+            </form>
+
         </div>
-        <div id="result"></div>
+
+
     </div>
-    <script>
 
-        const expressionInput = document.getElementById('expression');
-        const calculateButton = document.getElementById('calculate');
-        const clearButton = document.getElementById('clear');
-        const resultDiv = document.getElementById('result');
+    <div class="footer-content">
+        <h3>Contactos</h3>
+        <p>A minha informação</p>
+        <p>Email: miguelbcardoso7@hotmail.com</p>
+        <ul class="socials">
+            <li><a href="https://www.instagram.com/miguelbcardoso/"><img src="images/instagram.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/miguelbcardoso/"><img src="images/linkedin.png"></a></li>
+            <li><a href="https://github.com/miguel-cardoso-a22102861"><img src="images/githubrodape.png"></a>
+            </li>
 
-        calculateButton.addEventListener('click', () => {
-            const expression = expressionInput.value;
-            const result = eval(expression);
-            resultDiv.innerText = result;
-        });
+        </ul>
 
-        clearButton.addEventListener('click', () => {
-            resultDiv.innerText = '';
-            expressionInput.value = '';
-        });
-    </script>
-
-    <h2>Imagem para inserir legenda</h2>
-    <div class="image-container">
-        <form>
-            <label for="legenda">Legenda:</label>
-            <input type="text" id="legenda" name="legenda">
-            <input type="submit" value="Enviar" onclick="addCaption(event)">
-        </form>
-        <img src="images/imagemLegenda.png" alt="Imagem inspiradora">
-        <div class="caption"></div>
     </div>
-    <script>
-        function addCaption(event) {
-            event.preventDefault(); // impede que o formulário seja enviado
-
-            var legenda = document.getElementById("legenda").value;
-            var caption = document.querySelector(".caption");
-
-            caption.innerHTML = legenda;
-        }
-    </script>
-
-<div class="footer-content">
-    <h3>Contactos</h3>
-    <p>A minha informação</p>
-    <p>Email: miguelbcardoso7@hotmail.com</p>
-    <ul class="socials">
-        <li><a href="https://www.instagram.com/miguelbcardoso/"><img src="images/instagram.png"></a></li>
-        <li><a href="https://www.linkedin.com/in/miguelbcardoso/"><img src="images/linkedin.png"></a></li>
-        <li><a href="https://github.com/miguel-cardoso-a22102861"><img src="images/githubrodape.png"></a></li>
-
-    </ul>
-
-</div>
-<div class="footer-bottom">
-    <p>copyright &copy;2023 Miguel Cardoso. Feito por <span>Miguel Cardoso</span>
-    </p>
-</div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 Miguel Cardoso. Feito por <span>Miguel Cardoso</span>
+        </p>
+    </div>
 
 
 

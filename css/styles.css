@@ -91,7 +91,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    transition: 0.5s;
 }
+
 
 main {
     /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
@@ -101,6 +103,7 @@ main {
     background-size: cover;
     background-attachment: fixed;
 }
+
 .heropage {
     /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
     height: 90vh;
@@ -115,13 +118,13 @@ main>p {
     font-size: 3rem;
 }
 
-article{
+article {
     height: 90vh;
     background: transparent;
     padding: 0 4vw;
     text-align: center;
     font-size: 1.75rem;
-    
+
 
 }
 
@@ -595,12 +598,6 @@ body {
 }
 
 /* Calculadora */
-
-.calculator {
-    margin: 20px auto;
-    text-align: center;
-}
-
 input {
     width: 100%;
     padding: 10px;
@@ -849,6 +846,13 @@ header img {
     padding: 0;
 }
 
+.nome,
+.descricao,
+.disciplinas,
+.projetos {
+    margin-bottom: 1em;
+}
+
 .disciplinas li {
     margin-bottom: 5px;
     margin-left: 30px;
@@ -861,4 +865,69 @@ header img {
     margin-bottom: 10px;
     font-size: 14px;
     color: #0e110b;
+}
+
+.contentorCalculadora {
+    width: 100%;
+    height: 100vh;
+    background-color: #e3f9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calculadora {
+    background-color: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+
+.calculadora form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    margin: 10px;
+
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.igual {
+    width: 145px;
+}
+
+form input.operator {
+    color: rgba(214, 10, 10, 0.897);
+}
+
+/* dark mode butão */
+
+label {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+
 }
