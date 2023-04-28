@@ -744,7 +744,12 @@ button:hover {
     text-decoration: underline;
 }
 
+
 /* Os meus projetos */
+
+.projetos li {
+    color: black;
+}
 
 .project {
     margin-bottom: 30px;
