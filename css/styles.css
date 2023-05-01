@@ -78,7 +78,13 @@
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 0.8rem;
+        display: block;
+        font-size: 1.25em;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+        margin-left: 0.67em;
+        margin-right: 0;
+        font-weight: bold;
     }
 
     h2 {
@@ -104,7 +110,7 @@
 
 h1 {
     display: block;
-    font-size: 2em;
+    font-size: 1.25em;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
     margin-left: 0.67em;
