@@ -8,6 +8,7 @@
 
 }
 
+
 /* Media queries for responsive design */
 @media all and (max-width: 1200px) {
 
@@ -35,10 +36,6 @@
 }
 
 @media (max-width: 1024px) {
-    .h1 {
-        font-size: 0.8rem;
-    }
-
     h2 {
         font-size: 0.5rem;
     }
@@ -47,9 +44,8 @@
         font-size: 0.5rem;
     }
 
-    .nav-bar {
-
-        width: auto;
+    nav-bar {
+        height: 40vh;
     }
 
 }
